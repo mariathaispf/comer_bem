@@ -1,5 +1,5 @@
 body{
-    background-image: url("img/fundo_bege4.jpg");
+    background-image: url("../img/fundo_bege4.jpg");
     font-size: 20px;
 }
 .imagem{
@@ -26,6 +26,6 @@ button{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-.foto{
+.habitos{
     display: flex;
 }
