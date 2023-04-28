@@ -5,21 +5,21 @@ function calcular_imc() {
     var imc = peso/(altura*altura).toFixed(2);
     var img = document.getElementById("img");
 
-    
+
     if (imc >= 0 && imc <= 22) {
         document.getElementById("qualimc").innerHTML = 'Abaixo do Peso';
-        img.src = "imagens/imagemidoso/abaixopesoidoso.png"
+        img.src = "../img/abaixo.jpg";
     }
     else if (imc > 22 && imc < 27) {
         document.getElementById("qualimc").innerHTML = 'Peso Adequado';
-        img.src = "imagens/imagemidoso/pesoadequado.png"
+        img.src = "../img/normal.jpg"
     }
     else if (imc >= 27) {
         document.getElementById("qualimc").innerHTML = 'Sobrepeso';
-        img.src = "imagens/imagemidoso/sobrepeso.png"
+        img.src = "../img/acima.jpg"
     }
     else {
         document.getElementById("qualimc").innerHTML = 'IMC inválido';
-        img.src = "imagens/imc.png"
+        img.src = ""
     }
 }

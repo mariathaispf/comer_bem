@@ -8,30 +8,30 @@ function calcular_imc() {
 
     if (imc >= 0 && imc < 18.5) {
         document.getElementById("qualimc").innerHTML = 'Abaixo do Peso';
-        img.src = "imagens/imagemadulto/imc_abaixo.png"
+        img.src = "../img/abaixo.jpg";
     }
     else if (imc >= 18.5 && imc < 24.9) {
         document.getElementById("qualimc").innerHTML = 'Peso Normal';
-        img.src = "imagens/imagemadulto/pesonormal.png"
+        img.src = "../img/normal.jpg";
     }
     else if (imc >= 25 && imc < 29.9) {
         document.getElementById("qualimc").innerHTML = 'Acima do Peso';
-        img.src = "imagens/imagemadulto/acimapeso.png"
+        img.src = "../img/acima.jpg";
     }
     else if (imc >= 30 && imc < 34.9) {
         document.getElementById("qualimc").innerHTML = 'Obesidade (Classe 01)';
-        img.src = "imagens/imagemadulto/obesidade1.png"
+        img.src = "../img/obesidade1.jpg";
     }
     else if (imc >= 35 && imc < 39.9) {
         document.getElementById("qualimc").innerHTML = 'Obesidade (Classe 02)';
-        img.src = "imagens/imagemadulto/obesidade2.png"
+        img.src = "../img/obesidade2.jpg";
     }
     else if (imc >= 40) {
         document.getElementById("qualimc").innerHTML = 'Obesidade (Classe 03)';
-        img.src = "imagens/imagemadulto/obesidade3.png"
+        img.src = "../img/obesidade3.jpg";
     }
     else {
         document.getElementById("qualimc").innerHTML = 'IMC inválido';
-        img.src = "imagens/imc.png"
+        img.src = "";
     }
 }
